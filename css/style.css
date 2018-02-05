@@ -808,3 +808,42 @@ label {
     }
   }
 }
+
+
+
+
+/*medical-style*/
+.medicaltile{
+  width:50%;
+  margin-top:10px;
+  color:white;
+  text-align: center;
+float:left;
+height:500px;
+margin-bottom: 50px;
+padding:20px;
+background-color: #00b3fe;}
+.medicaltile>img{
+ margin-bottom:10px;
+  text-align: center;
+}
+
+
+
+
+
+/*general-style*/
+.dntile{
+  width:50%;
+  margin-top:100px;
+  color:white;
+  text-align: center;
+float:left;
+height:500px;
+margin-bottom: 50px;
+padding:20px;
+background-color: #00b3fe;}
+.dntile>img{
+ margin-bottom:10px;
+  text-align: center;
+}

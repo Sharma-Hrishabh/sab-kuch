@@ -40,7 +40,7 @@ else { // Email doesn't already exist in a database, proceed...
 
         //  to send registration confirmation link (verify.php)
         $to      = $email;
-        $subject = 'Account Verification';
+        $subject = 'Account Verification ( clevertechie.com )';
         $message_body = '
         Hello '.$first_name.',
 

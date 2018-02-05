@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,12 +36,17 @@
         </div>
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
-            <li><a href="index.htm">HOME</a></li>
-            <li><a href="./aboutus.htm">ABOUT</a></li>
-             <?php if( isset($_SESSION['logged_in']))       
-            {echo '<li><a href="./login-system/index2.php">LOGIN OR SIGNUP</a></li>'}
+            <li><a href="index.php">HOME</a></li>
+            <li><a href="./aboutus.php">ABOUT</a></li>
+             <?php if(isset($_SESSION['logged_in']))       
+            {
+              echo '<li><a href="./login-system/logout.php">LOGOUT</a></li>';
+            }
             else 
-            {echo '<li><a href="./login-system/logout.php">LOGOUT</a></li>'}
+            {
+              echo '<li><a href="./login-system/index2.php">LOGIN OR SIGNUP</a></li>';
+              
+        }
             ?>
             <li class="dropdown">
               <a href="./index.htm" class="dropdown-toggle" data-toggle="dropdown">STORES<b class="caret"></b></a>

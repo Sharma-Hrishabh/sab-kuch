@@ -117,10 +117,19 @@ echo '</pre>';
         </div>
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
-            <li><a href="../main.htm">HOME</a></li>
-            <li><a href="../aboutus.htm">ABOUT</a></li>
-            <li><a href="./contactus.htm">CONTACT</a></li>
-            <li><a href="./contactus.htm">LOGIN OR SIGNUP</a></li>
+            <li><a href="../index.php">HOME</a></li>
+            <li><a href="../aboutus.php">ABOUT</a></li>
+           
+           <?php if(isset($_SESSION['logged_in']))       
+            {
+              echo '<li><a href="./login-system/logout.php">LOGOUT</a></li>';
+            }
+            else 
+            {
+              echo '<li><a href="./login-system/index2.php">LOGIN OR SIGNUP</a></li>';
+              
+        }
+            ?>
             <li class="dropdown">
               <a href="../main.htm" class="dropdown-toggle" data-toggle="dropdown">STORES<b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -221,7 +230,7 @@ if($result):
                 if (isset($_SESSION['shopping_cart'])):
                 if (count($_SESSION['shopping_cart']) > 0):
              ?>
-                <a href="#" class="button">Checkout</a>
+                <a href="./checkout.php" class="button">Checkout</a>
              <?php endif; endif; ?>
             </td>
         </tr>

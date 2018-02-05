@@ -59,8 +59,8 @@ else {
           <h2><?php echo $first_name.' '.$last_name; ?></h2>
           <p><?= $email ?></p>
           
-          <a href="logout.php"><button class="button button-block" name="logout"/>Log Out</button></a>
-          <a href="../index.htm"><button class="button button-block" name="home"/>Continue to Home</button></a>
+          <a href="./logout.php"><button class="button button-block" name="logout"/>Log Out</button></a>
+          <a href="../index.php"><button class="button button-block" name="home"/>Continue to Home</button></a>
     </div>
 <>    
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
